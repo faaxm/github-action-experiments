@@ -16,10 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Dir Listing
-        run: |
-          tree "C:\Program Files (x86)\Windows Kits\10"
-
       - name: Package application
         run: |
           python3 test.py
